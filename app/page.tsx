@@ -63,9 +63,10 @@ export default function Home() {
       <section className="flex-1 flex items-center justify-center pt-20">
         <div className="container mx-auto px-6">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Hi, I'm <span className="text-blue-600">Alfira</span>
-            </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+  Hi, I&apos;m <span className="text-blue-600">Alfira</span>
+</h1>
+
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               A passionate Frontend Developer crafting beautiful and functional web experiences.
             </p>
