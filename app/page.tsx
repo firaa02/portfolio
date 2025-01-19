@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Github, Linkedin, Mail, Terminal, Code, Globe, BookOpen, Menu, X, ArrowRight, ExternalLink } from 'lucide-react';
 
 interface Skill {
@@ -128,7 +129,7 @@ const Homepage: React.FC = () => {
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold mb-8">
                 <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                  Hello, I'm Alfira
+                Hello, I&apos;m Alfira
                 </span>
                 <br />
                 <span className="mt-4 block text-4xl lg:text-6xl">
@@ -160,11 +161,13 @@ const Homepage: React.FC = () => {
               <div className="relative">
                 <div className="w-80 h-80 lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden border-4 border-blue-500/30 mx-auto relative group">
                   <div className="absolute inset-0 bg-gradient-to-b from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <img 
-                    src="/images/profile.jpg"
-                    alt="Alfira"
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                  />
+                  <Image 
+  src="/images/profile.jpg"
+  alt="Alfira"
+  width={500}
+  height={500}
+  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+/>
                 </div>
                 <div className="absolute -z-10 inset-0 blur-3xl bg-blue-500/20 rounded-full"></div>
               </div>
@@ -220,11 +223,13 @@ const Homepage: React.FC = () => {
                 className="group bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
               >
                 <div className="relative h-56 overflow-hidden">
-                  <img 
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                  />
+                <Image 
+  src={project.image}
+  alt={project.title}
+  width={600}
+  height={300}
+  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+/>
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
                     <ExternalLink className="text-white" size={24} />
                   </div>
